@@ -10,4 +10,4 @@ Tap to stop:
 ```javascripr
   kill.stop();
 ```
-<small>Project made for learning programming in JavaScript. I am not responsible for any use, and no material or moral losses, as well as copyright. You use this code at your own risk.</small>
+<sub>Project made for learning programming in JavaScript. I am not responsible for any use, and no material or moral losses, as well as copyright. You use this code at your own risk.</sub>
