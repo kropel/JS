@@ -1,7 +1,7 @@
-let kill = (function() {
+let kill = (function () {
   let timer;
   function clickX() {
-    let Xbutton = document.querySelector(".ytp-ad-overlay-close-button");
+    let Xbutton = document.querySelector('.ytp-ad-overlay-close-button');
     if (!!Xbutton) {
       console.log(Xbutton);
       Xbutton.click();
@@ -9,17 +9,19 @@ let kill = (function() {
   }
   function video() {
     let countdown = document.querySelector(
-      ".ytp-ad-preview-container.countdown-next-to-thumbnail"
+      '.ytp-ad-preview-container.countdown-next-to-thumbnail'
     );
-    let skip = document.querySelector(".ytp-ad-skip-button .ytp-button");
+    let skip = document.querySelector('.ytp-ad-skip-button.ytp-button');
     if (!!countdown || !!skip) {
-      console.log(countdown + "\n" + skip);
+      console.log(countdown + '\n' + skip);
       let video = document.querySelector(
-        ".html5-video-container > .video-stream"
+        '.html5-video-container > .video-stream'
       );
       video.currentTime = video.getDuration();
+      document.querySelector('.ytp-ad-skip-button.ytp-button').click();
     }
   }
+
   function init() {
     clickX();
     video();
@@ -33,6 +35,6 @@ let kill = (function() {
   start();
   return {
     start: start,
-    stop: stop
+    stop: stop,
   };
 })();
