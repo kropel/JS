@@ -17,7 +17,7 @@ let kill = (function () {
       let video = document.querySelector(
         '.html5-video-container > .video-stream'
       );
-      video.currentTime = video.getDuration();
+      video.currentTime = video.duration;
       document.querySelector('.ytp-ad-skip-button.ytp-button').click();
     }
   }
